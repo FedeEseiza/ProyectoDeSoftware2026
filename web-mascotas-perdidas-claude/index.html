@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PatitasPerdidas | Mascotas perdidas en tu zona</title>
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="cabecera__marca">
+    <span class="cabecera__logo" aria-hidden="true">🐾</span>
+    <span class="cabecera__titulo">PatitasPerdidas</span>
+  </div>
+  <nav class="nav" aria-label="Navegación principal">
+    <ul class="nav__lista">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#mascotas">Mascotas perdidas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#footer">Quiénes somos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== INICIO ===================== -->
+  <section id="inicio" class="hero">
+    <h1>Ayudemos a que vuelvan a casa</h1>
+    <p>Un espacio simple para publicar y buscar mascotas perdidas en la zona de La Plata y alrededores.
+       Elegí una categoría, mirá las fichas y comunicate si reconocés a alguna.</p>
+  </section>
+
+  <!-- ===================== LISTADO DE MASCOTAS ===================== -->
+  <section id="mascotas" class="mascotas">
+    <h2>Mascotas perdidas</h2>
+
+    <div class="selector">
+      <label for="categoria-select">Filtrar por categoría:</label>
+      <select id="categoria-select" name="categoria">
+        <option value="todos" selected>Todas</option>
+        <option value="perros">Perros</option>
+        <option value="gatos">Gatos</option>
+      </select>
+    </div>
+
+    <div class="listado">
+
+      <!-- ---- PERROS ---- -->
+
+      <article class="card card--perro">
+        <div class="card__marco">
+          <img src="imagenes/perro1.svg" alt="Foto de Toby, perro perdido" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Toby</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Perro</li>
+            <li><strong>Raza:</strong> Mestizo (mediano)</li>
+            <li><strong>Edad:</strong> 3 años</li>
+            <li><strong>Zona:</strong> Barrio Norte, La Plata</li>
+          </ul>
+          <p class="card__desc">Perdido cerca de la plaza, sin correa. Muy sociable, responde a su nombre. Collar rojo sin chapa.</p>
+          <a class="card__pdf" href="info/perro1.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+      <article class="card card--perro">
+        <div class="card__marco">
+          <img src="imagenes/perro2.svg" alt="Foto de Rocco, perro perdido" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Rocco</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Perro</li>
+            <li><strong>Raza:</strong> Labrador mestizo</li>
+            <li><strong>Edad:</strong> 5 años</li>
+            <li><strong>Zona:</strong> City Bell</li>
+          </ul>
+          <p class="card__desc">Se escapó durante una tormenta. Pelaje marrón oscuro, orejas caídas. Tímido con otros perros.</p>
+          <a class="card__pdf" href="info/perro2.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+      <article class="card card--perro">
+        <div class="card__marco">
+          <img src="imagenes/perro3.svg" alt="Foto de Luna, perra perdida" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Luna</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Perro</li>
+            <li><strong>Raza:</strong> Mestiza (pequeña)</li>
+            <li><strong>Edad:</strong> 2 años</li>
+            <li><strong>Zona:</strong> Tolosa</li>
+          </ul>
+          <p class="card__desc">Perdida cerca de la estación. Muy activa y juguetona, mancha blanca en el pecho.</p>
+          <a class="card__pdf" href="info/perro3.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+      <!-- ---- GATOS ---- -->
+
+      <article class="card card--gato">
+        <div class="card__marco">
+          <img src="imagenes/gato1.svg" alt="Foto de Michi, gato perdido" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Michi</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Gato</li>
+            <li><strong>Raza:</strong> Mestizo gris</li>
+            <li><strong>Edad:</strong> 4 años</li>
+            <li><strong>Zona:</strong> Barrio Norte, La Plata</li>
+          </ul>
+          <p class="card__desc">No vuelve a casa hace varios días. Esquivo con desconocidos, castrado, pelaje gris con blanco.</p>
+          <a class="card__pdf" href="info/gato1.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+      <article class="card card--gato">
+        <div class="card__marco">
+          <img src="imagenes/gato2.svg" alt="Foto de Simón, gato perdido" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Simón</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Gato</li>
+            <li><strong>Raza:</strong> Mestizo naranja</li>
+            <li><strong>Edad:</strong> 1 año</li>
+            <li><strong>Zona:</strong> Ringuelet</li>
+          </ul>
+          <p class="card__desc">Se perdió desde el patio de su casa. Muy curioso y confiado, pelaje atigrado naranja.</p>
+          <a class="card__pdf" href="info/gato2.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+      <article class="card card--gato">
+        <div class="card__marco">
+          <img src="imagenes/gato3.svg" alt="Foto de Nina, gata perdida" class="card__foto">
+        </div>
+        <div class="card__info">
+          <h3>Nina</h3>
+          <ul class="card__datos">
+            <li><strong>Especie:</strong> Gato</li>
+            <li><strong>Raza:</strong> Mestiza negra</li>
+            <li><strong>Edad:</strong> 6 años</li>
+            <li><strong>Zona:</strong> City Bell</li>
+          </ul>
+          <p class="card__desc">Falta desde fines de agosto. Carácter reservado, mancha blanca en una pata.</p>
+          <a class="card__pdf" href="info/gato3.pdf" target="_blank" rel="noopener">Ver ficha completa (PDF)</a>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="contacto">
+    <h2>Información de contacto</h2>
+    <p>¿Encontraste a alguna de estas mascotas o querés publicar una nueva búsqueda? Completá el formulario.</p>
+
+    <form class="formulario" action="#" method="post">
+      <div class="formulario__campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="formulario__campo">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+
+      <div class="formulario__campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="formulario__campo">
+        <label for="telefono">Teléfono (opcional)</label>
+        <input type="tel" id="telefono" name="telefono">
+      </div>
+
+      <div class="formulario__campo formulario__campo--ancho">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos dónde viste a la mascota o qué información tenés..."></textarea>
+      </div>
+
+      <button type="submit" class="formulario__boton">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer" class="footer">
+  <div class="footer__contenido">
+    <div class="footer__bloque">
+      <h3>Quiénes somos</h3>
+      <p>PatitasPerdidas es un sitio comunitario y sin fines de lucro mantenido por vecinos de La Plata
+         para ayudar a reencontrar mascotas perdidas con sus familias.</p>
+    </div>
+    <div class="footer__bloque">
+      <h3>Responsable del sitio</h3>
+      <p>Federico Gómez<br>
+         Voluntariado vecinal "PatitasPerdidas"<br>
+         La Plata, Buenos Aires, Argentina<br>
+         Email: contacto@patitasperdidas.example</p>
+    </div>
+  </div>
+  <p class="footer__legal">&copy; 2026 PatitasPerdidas. Sitio comunitario sin fines de lucro.</p>
+</footer>
+
+</body>
+</html>

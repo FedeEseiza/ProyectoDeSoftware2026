@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio estático para publicar mascotas perdidas y facilitar su reencuentro con sus familias.">
+    <title>Mascotas Perdidas | Ayudemos a Encontrarlas</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="logo" href="#inicio">🐾 Mascotas Perdidas</a>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#mascotas">Mascotas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Ayudemos a encontrarlos</span>
+                <h1>Una mascota perdida siempre merece una segunda mirada.</h1>
+                <p>Consultá los avisos publicados y, si reconocés a alguno, contactanos para ayudar a que vuelva a casa.</p>
+                <a class="button" href="#mascotas">Ver mascotas</a>
+            </div>
+        </section>
+
+        <section id="mascotas" class="section">
+            <div class="section-heading">
+                <span class="eyebrow">Listado</span>
+                <h2>Mascotas perdidas</h2>
+                <p>Seleccioná una categoría para consultar los avisos correspondientes.</p>
+            </div>
+
+            <div class="category-selector">
+                <label for="categoria-select">Categoría</label>
+                <select id="categoria-select" name="categoria">
+                    <option value="todos" selected>Todas las mascotas</option>
+                    <option value="perros">Perros</option>
+                    <option value="gatos">Gatos</option>
+                </select>
+            </div>
+            
+            <div id="perros" class="category-section">
+                <div class="category-title">
+                    <span>🐶</span>
+                    <div>
+                        <h3>Perros</h3>
+                        <p>Animales publicados en la categoría perros.</p>
+                    </div>
+                </div>
+
+                <div class="pet-grid">
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/rocky.jpg" alt="Rocky, perro marrón de tamaño mediano"></div>
+                        <div class="pet-info">
+                            <h4>Rocky</h4>
+                            <p><strong>Zona:</strong> La Plata</p>
+                            <p><strong>Descripción:</strong> Perro marrón, tamaño mediano, collar azul. Se perdió el 3 de septiembre.</p>
+                            <a class="pdf-link" href="info/rocky.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/luna.jpg" alt="Luna, perra blanca con manchas marrones"></div>
+                        <div class="pet-info">
+                            <h4>Luna</h4>
+                            <p><strong>Zona:</strong> Tolosa</p>
+                            <p><strong>Descripción:</strong> Hembra blanca con manchas marrones y collar rojo. Muy amigable.</p>
+                            <a class="pdf-link" href="info/luna.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/simon.jpg" alt="Simón, perro negro y blanco"></div>
+                        <div class="pet-info">
+                            <h4>Simón</h4>
+                            <p><strong>Zona:</strong> City Bell</p>
+                            <p><strong>Descripción:</strong> Perro negro y blanco, tamaño grande, con una pequeña mancha en el hocico.</p>
+                            <a class="pdf-link" href="info/simon.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div id="gatos" class="category-section">
+                <div class="category-title">
+                    <span>🐱</span>
+                    <div>
+                        <h3>Gatos</h3>
+                        <p>Animales publicados en la categoría gatos.</p>
+                    </div>
+                </div>
+
+                <div class="pet-grid">
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/milo.jpg" alt="Milo, gato gris atigrado"></div>
+                        <div class="pet-info">
+                            <h4>Milo</h4>
+                            <p><strong>Zona:</strong> Gonnet</p>
+                            <p><strong>Descripción:</strong> Gato gris atigrado, ojos verdes y collar amarillo. Se perdió recientemente.</p>
+                            <a class="pdf-link" href="info/milo.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/nina.jpg" alt="Nina, gata tricolor"></div>
+                        <div class="pet-info">
+                            <h4>Nina</h4>
+                            <p><strong>Zona:</strong> Villa Elisa</p>
+                            <p><strong>Descripción:</strong> Gata tricolor, pequeña, con una mancha negra alrededor del ojo derecho.</p>
+                            <a class="pdf-link" href="info/nina.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-photo"><img src="imagenes/tom.jpg" alt="Tom, gato naranja y blanco"></div>
+                        <div class="pet-info">
+                            <h4>Tom</h4>
+                            <p><strong>Zona:</strong> Los Hornos</p>
+                            <p><strong>Descripción:</strong> Gato naranja y blanco, de tamaño mediano y ojos amarillos.</p>
+                            <a class="pdf-link" href="info/tom.pdf" target="_blank">📄 Ver información completa</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact-section">
+            <div class="section-heading">
+                <span class="eyebrow">Contacto</span>
+                <h2>¿Tenés información?</h2>
+                <p>Completá el formulario para comunicarte con quienes mantienen el sitio.</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 221 555 1234">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué mascota reconociste o qué información querés brindar." required></textarea>
+                </div>
+
+                <button class="button" type="submit">Enviar información</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>🐾 Mascotas Perdidas</strong>
+            <p>Un sitio creado para colaborar con el reencuentro de mascotas y familias.</p>
+        </div>
+        <div>
+            <strong>Mantenimiento del sitio</strong>
+            <p>Proyecto mantenido por el equipo de voluntarios de Mascotas Perdidas.</p>
+        </div>
+        <p class="copyright">© 2026 Mascotas Perdidas · Sitio estático</p>
+    </footer>
+</body>
+</html>
